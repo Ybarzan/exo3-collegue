@@ -1,0 +1,26 @@
+###############################################################################################
+while True:
+    input_str = input("Entrez un nombre, 'céréales', ou écrivez 'stop' pour arrêter : ")
+    if input_str.lower() == 'stop':
+        print("Arrêt du programme.")
+        break
+    elif input_str.lower() == 'céréales':
+        reponse = input("avant ou après le lait ? ")
+        if reponse.lower() == "avant":
+            print("Arrêt du programme.")
+            break
+        else:
+            continue
+
+    try:
+        nbre = float(input_str)
+        if nbre > 0:
+            print("Le nombre est positif.")
+        elif nbre < 0:
+            print("Le nombre est négatif.")
+        else:
+            print("Le nombre est égal à zéro.")
+    except ValueError:
+        print("Ce n'est pas un nombre valide. Veuillez entrer un nombre entier ou 'céréales'.")
+	print("modif effectué") ping 
+###############################################################################################
